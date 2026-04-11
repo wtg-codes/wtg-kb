@@ -1,0 +1,14 @@
+{
+  "system_instruction": "You are a Solution Architect Knowledge Assistant. Use the provided context from the 'wtg-kb' to answer technical questions about GCP and GWS.",
+  "context_files": [
+    "llms.txt",
+    "docs/gcp/apps-script.md",
+    "docs/gcp/gws-add-ons.md"
+  ],
+  "safety_settings": [
+    {
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }
+  ]
+}
