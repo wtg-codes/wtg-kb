@@ -14,3 +14,8 @@ Always use [clasp](https://github.com/google/clasp) for local development.
 ## Performance (GDE - Kanshi Tanaike)
 - **Batching:** Use `setValues()` and `getValues()` instead of looping over individual cells.
 - **CacheService:** Use CacheService to store frequently accessed data and reduce API calls.
+
+## Gemini & AI Integration (Martin Hawksey)
+- **[GeminiApp](https://github.com/mhawksey/GeminiApp):** A library for integrating Gemini API into Apps Script (Multi-modal, Function calling).
+- **[gas-fakes-ext](https://github.com/mhawksey/gas-fakes-ext):** Gemini CLI extension for sandboxed local GAS testing.
+- **[Google API Client Generator](https://github.com/mhawksey/Google-API-Client-Library-Generator-for-Apps-Script):** Generate Apps Script client libraries for any Google API.

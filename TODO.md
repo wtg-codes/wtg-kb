@@ -26,12 +26,14 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 - [x] **Dynamic Updates:**
     - [x] Enhance `scripts/fetch-trends.sh` to parse specific GDE gists or repos.
 
-## Phase 4: Self-Updating & Active Ingestion (In Progress)
-- [ ] **Agent-Enabled Updates:**
-    - [ ] Create a "Contribution Guide" for AI agents (Jules/Cursor) on how to add new learnings to the KB.
-    - [ ] Implement a script to "crawl" current project files and suggest new entries for the KB.
-- [ ] **Automated Knowledge Ingestion:**
-    - [ ] Research using a local vector store (e.g., ChromaDB) to index the `imported/` folders for faster agent retrieval.
+## Phase 4: ADK, Gemini & Bluefin Ecosystem (In Progress)
+- [ ] **Agent Development Kit (ADK):**
+    - [ ] Create `docs/gcp/adk.md` (Rust/TS SDKs, samples, starter packs).
+    - [ ] Create `docs/skills/adk-skills.md` (Best practices for ADK agents).
+- [ ] **Agentic Workspace (Bluefin):**
+    - [ ] Create `docs/architecture/bluefin.md` (Distrobox, personal distros, agentic guide).
+- [ ] **Enterprise Security & Flow:**
+    - [ ] Create `docs/gcp/security-extended.md` (Chrome Enterprise Premium, Google Flow).
 
 ## Phase 5: Advanced Architecture & Visualization (Planned)
 - [ ] **Architecture Visualizer:**
@@ -39,7 +41,10 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 - [ ] **Multi-Cloud GAS Patterns:**
     - [ ] Document patterns for running native Apps Script logic on AWS/Azure using Bruce McP's research.
 
-## Phase 6: RAG & Vertex AI Integration (Future)
+## Phase 6: Self-Updating & Active Ingestion (Future)
+- [ ] **Agent-Enabled Updates:**
+    - [ ] Create a "Contribution Guide" for AI agents (Jules/Cursor) on how to add new learnings to the KB.
+    - [ ] Implement a script to "crawl" current project files and suggest new entries for the KB.
 - [ ] **Vertex AI Vector Search:**
     - [ ] Build a script to sync this KB with a Vertex AI Vector Search index for project-wide RAG.
 
@@ -53,6 +58,7 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 | **Local GAS with clasp/Node** | Bruce McP research | clasp, Node.js | Done |
 | **Workload Identity Federation Rules** | GCP Sandbox Access | GitHub Actions | Done |
 | **Antigravity Custom Skills** | docs/skills/ architecture | Antigravity | Done |
-| **Submodule Rules Sync** | fetch-trends.sh | Git | Done |
+| **ADK Implementation Guide** | Phase 4 | ADK (Rust/TS) | In Progress |
+| **Bluefin Distrobox Patterns** | Phase 4 | Distrobox/Bluefin | In Progress |
 | **Mermaid Pattern Templates** | Phase 5 | Mermaid.js | Pending |
 | **Vertex AI Search Sync** | Phase 6 | GCP SDK | Future |

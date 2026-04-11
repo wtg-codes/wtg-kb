@@ -18,6 +18,8 @@ graph TD
     Root --> Imported[imported/ - External Trends]
     Docs --> GCP[GCP Patterns]
     Docs --> GWS[GWS / Apps Script]
+    Docs --> ADK[ADK Ecosystem]
+    Docs --> Arch[Architecture / Bluefin]
     Imported --> AwesomeRules[awesome-cursorrules]
     Imported --> AgentRules[agent-rules]
     Scripts[scripts/fetch-trends.sh] --> Imported
