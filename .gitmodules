@@ -1,0 +1,6 @@
+[submodule "imported/awesome-cursorrules"]
+	path = imported/awesome-cursorrules
+	url = https://github.com/patrickjs/awesome-cursorrules.git
+[submodule "imported/agent-rules"]
+	path = imported/agent-rules
+	url = https://github.com/steipete/agent-rules.git

@@ -11,7 +11,6 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
     - [x] Create `docs/skills/gws-automation.md` (Instructions for agentic GWS tasks).
 
 ## Phase 2: Tooling & IDE Integration (Complete)
-*Dependencies: Phase 1 (Core Docs)*
 - [x] **Multi-Agent / IDE Support:**
     - [x] Create `docs/skills/antigravity-patterns.md`.
     - [x] Create template for `gemini-cli` configuration.
@@ -20,18 +19,29 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
     - [x] Add GitHub Action templates in `scripts/templates/github-actions/`.
     - [x] Create rules for 'keyless' auth using Workload Identity Federation (WIF).
 
-## Phase 3: External Knowledge Sync ("Piping") (In Progress)
-*Dependencies: Phase 1 & 2*
-- [ ] **Submodule Integration:**
-    - [ ] Add `patrickjs/awesome-cursorrules` as a submodule in `imported/`.
-    - [ ] Add `steipete/agent-rules` as a submodule in `imported/`.
-- [ ] **Dynamic Updates:**
-    - [ ] Enhance `scripts/fetch-trends.sh` to parse specific GDE gists or repos.
+## Phase 3: External Knowledge Sync ("Piping") (Complete)
+- [x] **Submodule Integration:**
+    - [x] Add `patrickjs/awesome-cursorrules` as a submodule in `imported/`.
+    - [x] Add `steipete/agent-rules` as a submodule in `imported/`.
+- [x] **Dynamic Updates:**
+    - [x] Enhance `scripts/fetch-trends.sh` to parse specific GDE gists or repos.
 
-## Phase 4: Self-Updating Mechanism
+## Phase 4: Self-Updating & Active Ingestion (In Progress)
 - [ ] **Agent-Enabled Updates:**
     - [ ] Create a "Contribution Guide" for AI agents (Jules/Cursor) on how to add new learnings to the KB.
     - [ ] Implement a script to "crawl" current project files and suggest new entries for the KB.
+- [ ] **Automated Knowledge Ingestion:**
+    - [ ] Research using a local vector store (e.g., ChromaDB) to index the `imported/` folders for faster agent retrieval.
+
+## Phase 5: Advanced Architecture & Visualization (Planned)
+- [ ] **Architecture Visualizer:**
+    - [ ] Integrate Mermaid.js templates for common GCP patterns (Cloud Run + Pub/Sub, Vertex AI Pipelines).
+- [ ] **Multi-Cloud GAS Patterns:**
+    - [ ] Document patterns for running native Apps Script logic on AWS/Azure using Bruce McP's research.
+
+## Phase 6: RAG & Vertex AI Integration (Future)
+- [ ] **Vertex AI Vector Search:**
+    - [ ] Build a script to sync this KB with a Vertex AI Vector Search index for project-wide RAG.
 
 ---
 
@@ -43,4 +53,6 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 | **Local GAS with clasp/Node** | Bruce McP research | clasp, Node.js | Done |
 | **Workload Identity Federation Rules** | GCP Sandbox Access | GitHub Actions | Done |
 | **Antigravity Custom Skills** | docs/skills/ architecture | Antigravity | Done |
-| **Automated Knowledge Ingestion** | fetch-trends.sh | bash, python | Pending |
+| **Submodule Rules Sync** | fetch-trends.sh | Git | Done |
+| **Mermaid Pattern Templates** | Phase 5 | Mermaid.js | Pending |
+| **Vertex AI Search Sync** | Phase 6 | GCP SDK | Future |

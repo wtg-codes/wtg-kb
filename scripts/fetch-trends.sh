@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Script to fetch latest AI rules and trends into the 'imported' folder
-# usage: ./scripts/fetch-trends.sh
+# WTG Knowledge Base - Sync Script
+# This script keeps your KB updated with the latest trends and external rules.
 
-echo "Updating external skills and rules..."
+echo "🔄 Updating Git Submodules..."
+git submodule update --init --recursive --remote
 
-# Example: Updating Git Submodules
-# git submodule update --init --recursive --remote
+echo "🔍 Fetching GDE Patterns..."
+# Bruce McPherson's gas-fakes examples
+curl -s https://raw.githubusercontent.com/brucemcpherson/gas-fakes/main/README.md -o docs/gcp/gas-fakes-reference.md
 
-# Example: Fetching a specific curated list or gist
-# curl -s https://raw.githubusercontent.com/user/repo/main/rules.md -o docs/skills/external-rules.md
-
-echo "Knowledge base updated successfully."
+echo "✅ Knowledge base updated successfully."
