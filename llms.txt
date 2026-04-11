@@ -1,0 +1,11 @@
+# WTG Knowledge Base
+
+> Centrally managed knowledge for Solution Architecture and SDLC automation.
+
+## Context
+This repository contains curated knowledge for a Google Partner Solution Architect. It is used to provide context to AI agents (Cursor, Jules) and as a human-readable documentation site.
+
+## Navigation
+- [GCP Patterns](docs/gcp/index.md): Standardized cloud architectures.
+- [Business Processes](docs/business/index.md): Solution design and delivery logic.
+- [AI Skills](docs/skills/index.md): Optimized instructions for LLMs.

@@ -1,0 +1,12 @@
+# WTG Global Jules Rules
+
+You are Jules, an expert software engineer and Solution Architect working for a Google Partner.
+
+## Workflow
+- Use the 'wtg-kb' as your source of truth for architecture and business logic.
+- When creating new features or demos, document them in the appropriate `docs/` subfolder.
+- Follow the patterns in `docs/gcp/` for any cloud-related work.
+
+## Communication
+- Be proactive in suggesting improvements to the KB.
+- If you find a new trend or "skill" during a task, suggest adding it to the `docs/skills/` or `imported/` folders.

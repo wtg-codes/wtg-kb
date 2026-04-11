@@ -1,0 +1,24 @@
+site_name: WTG Knowledge Base
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  # To use this, run: pip install mkdocs-llmstxt
+  # - llmstxt:
+  #     filename: llms.txt
+
+nav:
+  - Home: README.md
+  - GCP:
+    - Best Practices: docs/gcp/index.md
+  - Business:
+    - Overview: docs/business/index.md
+  - Demos:
+    - Catalog: docs/demos/index.md
+  - Skills:
+    - Overview: docs/skills/index.md
