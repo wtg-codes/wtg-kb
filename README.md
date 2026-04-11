@@ -1,28 +1,61 @@
-# WTG Knowledge Base (wtg-kb)
+# 🌐 WTG Knowledge Base (wtg-kb)
+### *The Ultimate Solution Architect Brain for GCP & GWS*
 
-A centralized repository for amassing knowledge, business processes, and AI-driven skills for SDLC projects.
+![Architecture](https://img.shields.io/badge/Architecture-Modular-blue)
+![Platform](https://img.shields.io/badge/Platform-GCP%20|%20GWS-green)
+![Agents](https://img.shields.io/badge/Agents-Cursor%20|%20Jules%20|%20Antigravity-orange)
 
-## Architecture
+Welcome to your centralized "Second Brain" for software development and solution architecture. This repository is specifically designed to be consumed by **Agentic IDEs** while maintaining a professional documentation site for humans.
 
-This KB is designed for a **Solution Architect** workflow, optimized for consumption by both humans (via MkDocs) and AI agents (via Cursor, Jules, and llms.txt).
+---
 
-### Directory Structure
+## 🏗️ Architecture: The "Brain" Design
 
-- `docs/`: The core knowledge base.
-    - `gcp/`: Patterns and best practices for Google Cloud Platform.
-    - `business/`: Business process logic and client-facing templates.
-    - `demos/`: Notes and technical details for internal tools and demos.
-    - `skills/`: Specific "AI Skills" defined in Markdown for LLM consumption.
-- `imported/`: External knowledge sources (e.g., Git submodules for .cursorrules).
-- `scripts/`: Automation for syncing and "piping in" external trends.
+```mermaid
+graph TD
+    Root[.cursorrules / .julesrules] --> Docs[docs/ - Internal Wisdom]
+    Root --> Skills[docs/skills/ - Agent Instructions]
+    Root --> Imported[imported/ - External Trends]
+    Docs --> GCP[GCP Patterns]
+    Docs --> GWS[GWS / Apps Script]
+    Imported --> AwesomeRules[awesome-cursorrules]
+    Imported --> AgentRules[agent-rules]
+    Scripts[scripts/fetch-trends.sh] --> Imported
+```
 
-## Recommended Tools
+### Key Components
+- **docs/**: Your curated, project-specific knowledge.
+- **docs/skills/**: "Hardened" instructions for AI agents to perform complex tasks.
+- **imported/**: Live submodules of the industry's best AI rules.
+- **llms.txt**: A machine-readable "Map" for AI crawlers and tools.
 
-1. **Infrastructure:** [Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
-2. **AI Standards:** [llms.txt](https://llms-txt.org)
-3. **Skills Library:** [awesome-cursorrules](https://github.com/patrickjs/awesome-cursorrules)
+---
 
-## How to use with Cursor/Jules
+## 🚀 Quick Start: Agent Integration
 
-1. **Global Rules:** Use the `.cursorrules` in this root for general architecture guidance.
-2. **Symlinking:** For individual projects, symlink the relevant files from this repo to your project root.
+### 1. Cursor & Jules
+These tools use the root `.cursorrules` and `.julesrules` to understand your persona (Solution Architect) and your preferred tech stack (GCP/GWS).
+> **Tip:** Symlink these files to your active projects to carry your "Brain" with you.
+
+### 2. Antigravity (Google)
+Configure Antigravity to use `docs/skills/` as its primary reference for GWS automation. See [AGENT_GUIDE.md](AGENT_GUIDE.md) for details.
+
+### 3. Google Apps Script (clasp)
+Developed patterns for local Node.js emulation and CI/CD via GitHub Actions (with WIF) are located in `docs/gcp/apps-script.md`.
+
+---
+
+## 💎 The "GDE" Advantage
+This KB incorporates patterns and libraries from leading Google Developer Experts:
+- **Bruce McPherson:** Emulating GAS with `gas-fakes`, local debugging, and Workload Identity Federation.
+- **Kanshi Tanaike:** Performance optimizations for high-scale GWS integrations.
+
+---
+
+## 🛠️ Maintenance
+To keep your brain updated with the latest trends:
+```bash
+./scripts/fetch-trends.sh
+```
+
+See [TODO.md](TODO.md) for the upcoming roadmap.
