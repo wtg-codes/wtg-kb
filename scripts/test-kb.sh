@@ -2,6 +2,7 @@
 # Comprehensive Test Suite for WTG Knowledge Base
 
 echo "🧪 Starting KB Test Suite..."
+./scripts/sync-project-meta.sh
 
 ERROR_COUNT=0
 
