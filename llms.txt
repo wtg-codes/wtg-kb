@@ -1,13 +1,13 @@
 # WTG Knowledge Base Manifest
 
-> Auto-generated map of the Working Title Group KB.
+> Auto-generated map for AI agents.
 
-## Sections
-- [Agents](docs/agents/index.md)
-- [Architecture](docs/architecture/index.md)
-- [Business](docs/business/index.md)
-- [Cloud](docs/cloud/index.md)
-- [Demos](docs/demos/index.md)
-- [Security](docs/security/index.md)
-- [Skills](docs/skills/index.md)
-- [Workspace](docs/workspace/index.md)
+## Navigation
+- [Agents](/docs/agents)
+- [Architecture](/docs/architecture)
+- [Business](/docs/business)
+- [Cloud](/docs/cloud)
+- [Demos](/docs/demos)
+- [Security](/docs/security)
+- [Skills](/docs/skills)
+- [Workspace](/docs/workspace)

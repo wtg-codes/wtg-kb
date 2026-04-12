@@ -4,7 +4,7 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 
 ## Phase 1: Foundational Structure & GWS Core (Complete)
 - [x] Initial directory structure (docs, imported, scripts).
-- [x] Base configuration (MkDocs, llms.txt, .cursorrules, .julesrules).
+- [x] Base configuration (Docusaurus, llms.txt, .cursorrules, .julesrules).
 - [x] **Refactored Architecture:** Cleaned up docs/ into Cloud, Workspace, Agents, Security, Architecture.
 
 ## Phase 2: Tooling & IDE Integration (Complete)
