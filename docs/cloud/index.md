@@ -1,1 +1,2 @@
 - [Security & Auth](docs/gcp/security.md)
+- [Vertex AI](docs/cloud/vertex-ai.md)

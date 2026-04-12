@@ -1,18 +1,13 @@
-# WTG Knowledge Base
+# WTG Knowledge Base Manifest
 
-> Centrally managed knowledge for Solution Architecture, SDLC automation, and Agentic Workspaces.
+> Auto-generated map of the Working Title Group KB.
 
-## Context
-This repository contains curated knowledge for a Google Partner Solution Architect. It is used to provide context to AI agents (Cursor, Jules, Antigravity) and as a human-readable documentation site.
-
-## Navigation
-- [GCP Patterns](docs/gcp/index.md): Standardized cloud architectures.
-- [Apps Script & GWS](docs/gcp/apps-script.md): GDE patterns (McPherson, Tanaike, Hawksey).
-- [ADK (Agent Development Kit)](docs/gcp/adk.md): Building high-performance agents.
-- [Agentic Workspace (Bluefin)](docs/architecture/bluefin.md): Cloud-native desktop and Distrobox.
-- [Enterprise Security](docs/gcp/security-extended.md): CEP and Google Flow.
-- [AI Skills](docs/skills/index.md): Optimized instructions for LLMs.
-
-## Community Resources
-- [Gassypedia](https://ramblings.mcpher.com/gassypedia-2-years/): Tracking the GAS ecosystem.
-- [ADK Samples](https://github.com/google/adk-samples): Official Google ADK examples.
+## Sections
+- [Agents](docs/agents/index.md)
+- [Architecture](docs/architecture/index.md)
+- [Business](docs/business/index.md)
+- [Cloud](docs/cloud/index.md)
+- [Demos](docs/demos/index.md)
+- [Security](docs/security/index.md)
+- [Skills](docs/skills/index.md)
+- [Workspace](docs/workspace/index.md)
