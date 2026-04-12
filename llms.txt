@@ -1,13 +1,7 @@
 # WTG Knowledge Base Manifest
-
-> Auto-generated map for AI agents.
-
 ## Navigation
 - [Agents](/docs/agents)
 - [Architecture](/docs/architecture)
-- [Business](/docs/business)
 - [Cloud](/docs/cloud)
-- [Demos](/docs/demos)
 - [Security](/docs/security)
-- [Skills](/docs/skills)
 - [Workspace](/docs/workspace)

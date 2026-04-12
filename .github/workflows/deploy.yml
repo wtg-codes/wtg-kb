@@ -20,12 +20,15 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build website
+        env:
+          WEBPACK_BAR_DISABLE: 'true'
         run: npm run build
 
       - name: Deploy to GitHub Pages

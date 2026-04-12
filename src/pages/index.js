@@ -4,19 +4,10 @@ import Link from '@docusaurus/Link';
 
 export default function Home() {
   return (
-    <Layout
-      title="WTG Knowledge Base"
-      description="The Ultimate Solution Architect Brain">
+    <Layout title="WTG-KB" description="Solution Architect Brain">
       <main style={{padding: '2rem', textAlign: 'center'}}>
-        <h1>Welcome to WTG-KB</h1>
-        <p>A centralized brain for GCP, GWS, and Agentic Workflows.</p>
-        <div style={{marginTop: '2rem'}}>
-          <Link
-            className="button button--primary button--lg"
-            to="/docs/cloud/">
-            Enter the Knowledge Base
-          </Link>
-        </div>
+        <h1>WTG Knowledge Base</h1>
+        <Link className="button button--primary button--lg" to="/docs/cloud/">Enter</Link>
       </main>
     </Layout>
   );

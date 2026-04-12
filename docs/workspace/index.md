@@ -1,2 +1,2 @@
-- [Apps Script](apps-script.md)
-- [GWS Add-ons](gws-add-ons.md)
+- [Apps Script](./apps-script.md)
+- [GWS Add-ons](./gws-add-ons.md)

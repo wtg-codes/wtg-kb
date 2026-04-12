@@ -1,2 +1,2 @@
-- [WIF Patterns](wif-patterns.md)
-- [Enterprise Security](enterprise-security.md)
+- [WIF Patterns](./wif-patterns.md)
+- [Enterprise Security](./enterprise-security.md)

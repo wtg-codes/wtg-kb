@@ -1,1 +1,1 @@
-- [Vertex AI](vertex-ai.md)
+- [Vertex AI](./vertex-ai.md)
