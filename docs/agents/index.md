@@ -1,1 +1,1 @@
-- [ADK Ecosystem](docs/agents/adk.md)
+- [ADK Ecosystem](adk.md)

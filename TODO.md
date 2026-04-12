@@ -15,23 +15,23 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 - [x] **Submodule Integration:** awesome-cursorrules, agent-rules, mcp-servers, gemini-cookbook.
 - [x] **Dynamic Updates:** Enhanced `fetch-trends.sh` and `mcp-manage.sh`.
 
-## Phase 4: Advanced Automation & Manifesting (In Progress)
-- [x] **Automation Scripts:** Added `setup-agentic-env.sh`, `generate-manifest.sh`.
-- [ ] **Compliance Bot:** (Future) A script to verify link integrity and MD formatting.
-- [ ] **Contribution Guide:** (In Progress) Instructions for AI agents on how to add entries to the refactored structure.
+## Phase 4: Advanced Automation & Manifesting (Complete)
+- [x] **Automation Scripts:** setup-agentic-env.sh, generate-manifest.sh.
+- [x] **Compliance Bot:** Added `check-compliance.sh` for link and structure integrity.
+- [x] **Contribution Guide:** Instructions for AI agents (Jules/Cursor) in `skills/agent-contribution.md`.
 
-## Phase 5: RAG & Vertex AI Search Integration (Planned)
-- [ ] **Vertex AI Sync:** Automate the indexing of this KB into Vertex AI Vector Search.
-- [ ] **Mermaid Templates:** Standardize architecture diagrams for common GCP patterns.
+## Phase 5: RAG & Vertex AI Search Integration (Complete)
+- [x] **Vertex AI Sync:** Added `vertex-ai-sync.sh` for GCS/Search integration.
+- [x] **Mermaid Templates:** Standardized architecture diagrams in `architecture/patterns.md`.
 
 ---
 
-## Refactored Directory Map
+## Final Project Status: 100% Core Roadmap Complete
 
-| Folder | Content |
-| :--- | :--- |
-| `docs/cloud/` | Pure GCP Patterns (Vertex AI, Cloud Run). |
-| `docs/workspace/` | GWS, Apps Script, Flow, Add-ons. |
-| `docs/agents/` | ADK, MCP, Agent Skill definitions. |
-| `docs/security/` | WIF, CEP, Identity patterns. |
-| `docs/architecture/` | Bluefin, Distrobox, High-level designs. |
+| Component | Status | Tool |
+| :--- | :--- | :--- |
+| **Docusaurus UI** | Deployed | GitHub Pages |
+| **Agent Navigation** | Active | llms.txt |
+| **External Trends** | Synced | Git Submodules |
+| **GCP Patterns** | Documented | Mermaid.js |
+| **Self-Correction** | Ready | Compliance Bot |
