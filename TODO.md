@@ -9,7 +9,7 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 
 ## Phase 2: Tooling & IDE Integration (Complete)
 - [x] **Multi-Agent / IDE Support:** Antigravity, Gemini CLI, Cursor, Jules rules.
-- [x] **CI/CD & Automation:** GitHub Actions with WIF patterns.
+- [x] **CI/CD & Automation:** GitHub Actions (WIF + Docusaurus GitHub Pages).
 
 ## Phase 3: External Knowledge Sync ("Piping") (Complete)
 - [x] **Submodule Integration:** awesome-cursorrules, agent-rules, mcp-servers, gemini-cookbook.

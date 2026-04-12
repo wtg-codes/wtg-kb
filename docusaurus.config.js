@@ -5,12 +5,13 @@ const config = {
   title: 'WTG Knowledge Base',
   tagline: 'The Ultimate Solution Architect Brain',
   favicon: 'img/favicon.ico',
-  url: 'https://kb.workingtitlegroup.com',
-  baseUrl: '/',
+  url: 'https://working-title-group.github.io',
+  baseUrl: '/wtg-kb/',
   organizationName: 'working-title-group',
   projectName: 'wtg-kb',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   markdown: {
     mermaid: true,

@@ -67,7 +67,10 @@ See [TODO.md](TODO.md) for the upcoming roadmap.
 
 ---
 
-## 🖥️ Local Documentation Site
+## 🖥️ Documentation Site
+Live site: https://working-title-group.github.io/wtg-kb/
+
+### Local Development
 This KB is powered by **Docusaurus**. To run the human-readable site locally:
 1. Install dependencies: `npm install`
 2. Start the site: `npm start`
