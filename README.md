@@ -64,3 +64,11 @@ To keep your brain updated with the latest trends:
 ```
 
 See [TODO.md](TODO.md) for the upcoming roadmap.
+
+---
+
+## 🖥️ Local Documentation Site
+This KB is powered by **Docusaurus**. To run the human-readable site locally:
+1. Install dependencies: `npm install`
+2. Start the site: `npm start`
+3. Build for production: `npm run build`
