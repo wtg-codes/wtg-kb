@@ -68,7 +68,7 @@ See [TODO.md](TODO.md) for the upcoming roadmap.
 ---
 
 ## 🖥️ Documentation Site
-Live site: https://working-title-group.github.io/wtg-kb/
+Live site: https://wtg-codes.github.io/wtg-kb/
 
 ### Local Development
 This KB is powered by **Docusaurus**. To run the human-readable site locally:
