@@ -1,2 +1,2 @@
-- [Bluefin & Distrobox](bluefin.md)
-- [Architecture Patterns](patterns.md)
+- [Bluefin](./bluefin.md)
+- [Architecture Patterns](./patterns.md)
