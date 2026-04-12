@@ -54,7 +54,10 @@ This KB incorporates patterns and libraries from leading Google Developer Expert
 
 ---
 
-## 🛠️ Maintenance
+## 🛠️ Scripts & Maintenance
+- `./scripts/fetch-trends.sh`: Sync external repos.
+- `./scripts/generate-manifest.sh`: Update llms.txt.
+- `./scripts/setup-agentic-env.sh`: Scaffold Distrobox.
 To keep your brain updated with the latest trends:
 ```bash
 ./scripts/fetch-trends.sh

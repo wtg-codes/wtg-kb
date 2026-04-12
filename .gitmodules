@@ -4,3 +4,9 @@
 [submodule "imported/agent-rules"]
 	path = imported/agent-rules
 	url = https://github.com/steipete/agent-rules.git
+[submodule "imported/mcp-servers"]
+	path = imported/mcp-servers
+	url = https://github.com/modelcontextprotocol/servers.git
+[submodule "imported/gemini-cookbook"]
+	path = imported/gemini-cookbook
+	url = https://github.com/google-gemini/cookbook.git

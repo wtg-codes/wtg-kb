@@ -1,0 +1,2 @@
+- [Apps Script](docs/workspace/apps-script.md)
+- [GWS Add-ons](docs/workspace/gws-add-ons.md)
