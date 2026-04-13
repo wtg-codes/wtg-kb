@@ -25,17 +25,36 @@ const config = {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'WTG-KB',
       items: [
         { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Knowledge' },
+        { to: '/docs/agents/templates', label: 'Agent Rules', position: 'left' },
         { href: 'https://github.com/working-title-group/wtg-kb', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
-      links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} Working Title Group.`,
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            { label: 'Cloud', to: '/docs/cloud/' },
+            { label: 'Agents', to: '/docs/agents/' },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            { label: 'GitHub', href: 'https://github.com/working-title-group/wtg-kb' },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Working Title Group. Built with Glassy Dark Mode.`,
     },
   },
 };
