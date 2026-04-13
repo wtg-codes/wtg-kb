@@ -1,11 +1,13 @@
 # 🌐 WTG Knowledge Base (wtg-kb)
 ### *The Ultimate Solution Architect Brain for GCP & GWS*
 
-![Architecture](https://img.shields.io/badge/Architecture-Modular-blue)
-![Platform](https://img.shields.io/badge/Platform-GCP%20|%20GWS-green)
-![Agents](https://img.shields.io/badge/Agents-Cursor%20|%20Jules%20|%20Antigravity-orange)
+[![Deploy to GitHub Pages](https://github.com/wtg-codes/wtg-kb/actions/workflows/deploy.yml/badge.svg)](https://github.com/wtg-codes/wtg-kb/actions/workflows/deploy.yml)
+[![Docusaurus](https://img.shields.io/badge/Docusaurus-3.10.0-blue?logo=docusaurus)](https://docusaurus.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/Platform-GCP%20%7C%20GWS-green?logo=google-cloud)](https://cloud.google.com/)
+[![Agents](https://img.shields.io/badge/Agents-Cursor%20%7C%20Jules-orange)](https://wtg-codes.github.io/wtg-kb/docs/agents/templates)
 
-Welcome to your centralized "Second Brain" for software development and solution architecture. This repository is specifically designed to be consumed by **Agentic IDEs** while maintaining a professional documentation site for humans.
+Welcome to your centralized **"Second Brain"** for software development and solution architecture. This repository is a dual-purpose system: a **machine-readable knowledge graph** for Agentic IDEs and a **high-end documentation suite** for humans.
 
 ---
 
@@ -18,52 +20,35 @@ graph TD
     Root --> Imported[imported/ - External Trends]
     Docs --> GCP[GCP Patterns]
     Docs --> GWS[GWS / Apps Script]
-    Docs --> ADK[ADK Ecosystem]
-    Docs --> Arch[Architecture / Bluefin]
+    Docs --> SDLC[SDLC Phases]
+    Docs --> Agents[Agentic Engineering]
     Imported --> AwesomeRules[awesome-cursorrules]
     Imported --> AgentRules[agent-rules]
     Scripts[scripts/fetch-trends.sh] --> Imported
 ```
 
-### Key Components
-- **docs/**: Your curated, project-specific knowledge.
-- **docs/skills/**: "Hardened" instructions for AI agents to perform complex tasks.
-- **imported/**: Live submodules of the industry's best AI rules.
-- **llms.txt**: A machine-readable "Map" for AI crawlers and tools.
+### 🧠 Core Philosophy
+1. **Agent-First**: Structure is optimized for LLM context windows and RAG ingestion.
+2. **Glassy UX**: The human-facing site uses a modern, semi-transparent dark aesthetic.
+3. **Modular Knowledge**: External trends are piped in via Git submodules to stay evergreen.
 
 ---
 
 ## 🚀 Quick Start: Agent Integration
 
-### 1. Cursor & Jules
-These tools use the root `.cursorrules` and `.julesrules` to understand your persona (Solution Architect) and your preferred tech stack (GCP/GWS).
-> **Tip:** Symlink these files to your active projects to carry your "Brain" with you.
+### 1. Cursor, Jules & Antigravity
+The root `.cursorrules` and `.julesrules` provide global context for your persona (Solution Architect) and preferred tech stack.
+> **Tip:** Symlink these rules to your active project roots to synchronize your "Brain" across repos.
 
-### 2. Antigravity (Google)
-Configure Antigravity to use `docs/skills/` as its primary reference for GWS automation. See [AGENT_GUIDE.md](AGENT_GUIDE.md) for details.
-
-### 3. Google Apps Script (clasp)
-Developed patterns for local Node.js emulation and CI/CD via GitHub Actions (with WIF) are located in `docs/gcp/apps-script.md`.
+### 2. Multi-Agent Templates
+Access standardized prompt formats and rule definitions in the [Agent Rules](https://wtg-codes.github.io/wtg-kb/docs/agents/templates) section.
 
 ---
 
-## 💎 The "GDE" Advantage
-This KB incorporates patterns and libraries from leading Google Developer Experts:
-- **Bruce McPherson:** Emulating GAS with `gas-fakes`, local debugging, and Workload Identity Federation.
-- **Kanshi Tanaike:** Performance optimizations for high-scale GWS integrations.
-
----
-
-## 🛠️ Scripts & Maintenance
-- `./scripts/fetch-trends.sh`: Sync external repos.
-- `./scripts/generate-manifest.sh`: Update llms.txt.
-- `./scripts/setup-agentic-env.sh`: Scaffold Distrobox.
-To keep your brain updated with the latest trends:
-```bash
-./scripts/fetch-trends.sh
-```
-
-See [TODO.md](TODO.md) for the upcoming roadmap.
+## 🛠️ Maintenance & Automation
+- `./scripts/check-compliance.sh`: Validates structure and link integrity.
+- `./scripts/fetch-trends.sh`: Syncs external knowledge submodules.
+- `./scripts/generate-manifest.sh`: Updates the machine-readable `llms.txt`.
 
 ---
 
@@ -71,7 +56,20 @@ See [TODO.md](TODO.md) for the upcoming roadmap.
 Live site: https://wtg-codes.github.io/wtg-kb/
 
 ### Local Development
-This KB is powered by **Docusaurus**. To run the human-readable site locally:
-1. Install dependencies: `npm install`
-2. Start the site: `npm start`
-3. Build for production: `npm run build`
+```bash
+npm install
+# To start the dev server locally:
+npm run start
+```
+
+---
+
+## 📝 Manual Setup & Pending Configurations
+*The following items require manual intervention or represent current environment constraints:*
+
+1. **GitHub Pages Deployment**: Ensure "Settings > Pages" is set to "GitHub Actions" as the source.
+2. **Submodule Sync**: Run `git submodule update --init --recursive` after cloning.
+3. **Vertex AI Search**: To enable RAG, configure a Search & Conversation app pointing to your GCS bucket synced via `scripts/vertex-ai-sync.sh`.
+
+---
+*Built with ❤️ by Working Title Group*

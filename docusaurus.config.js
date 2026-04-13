@@ -10,7 +10,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
-  markdown: { mermaid: true },
+  markdown: {
+    mermaid: true,
+  },
   themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
@@ -18,7 +20,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/working-title-group/wtg-kb/tree/main/',
+          editUrl: 'https://github.com/wtg-codes/wtg-kb/tree/main/',
         },
         theme: { customCss: './src/css/custom.css' },
       },
@@ -34,7 +36,7 @@ const config = {
       items: [
         { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Knowledge' },
         { to: '/docs/agents/templates', label: 'Agent Rules', position: 'left' },
-        { href: 'https://github.com/working-title-group/wtg-kb', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/wtg-codes/wtg-kb', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
@@ -50,7 +52,7 @@ const config = {
         {
           title: 'Community',
           items: [
-            { label: 'GitHub', href: 'https://github.com/working-title-group/wtg-kb' },
+            { label: 'GitHub', href: 'https://github.com/wtg-codes/wtg-kb' },
           ],
         },
       ],
