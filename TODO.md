@@ -24,10 +24,18 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 - [x] **Vertex AI Sync:** Added `vertex-ai-sync.sh` for GCS/Search integration.
 - [x] **Mermaid Templates:** Standardized architecture diagrams in `architecture/patterns.md`.
 
-## Phase 6: Quality Assurance & Testing (Complete)
-- [x] **CI/CD Fix:** Resolved missing `package-lock.json` and `.gitignore` issues.
-- [x] **Test Suite:** Added `scripts/test-kb.sh` for automated validation of critical files and rules.
-- [x] **Environment Parity:** Ensured consistent behavior between local and CI environments.
+## Phase 6: UX Polish & Multi-Agent Standard (Complete)
+- [x] **High-End UI:** Implemented Glassy Dark Mode with backdrop filters.
+- [x] **Cross-Agent Standards:** Added `docs/agents/templates.md` for Jules, Cursor, Antigravity.
+- [x] **SDLC Expansion:** Added DevOps, Testing, and Product requirements sections.
+
+---
+
+## Future Roadmap (Planned)
+- [ ] **Automated Curation Inbox:** Periodic scouts of GitHub/RSS for new AI tools.
+- [ ] **Agentic Compliance Bot v2:** Auto-fixing broken links and formatting issues.
+- [ ] **RAG Metadata Injection:** Script to auto-tag all markdown files for better Vertex AI Search indexing.
+- [ ] **Interactive Architecture Sandbox:** Embedded Mermaid editor for rapid pattern prototyping.
 
 ---
 
@@ -35,7 +43,7 @@ This document outlines the structured plan for building out the 'wtg-kb' into th
 
 | Component | Status | Tool |
 | :--- | :--- | :--- |
-| **Docusaurus UI** | Deployed | GitHub Pages |
+| **Docusaurus UI** | Deployed (Glassy) | GitHub Pages |
 | **Agent Navigation** | Active | llms.txt |
 | **External Trends** | Synced | Git Submodules |
 | **GCP Patterns** | Documented | Mermaid.js |
