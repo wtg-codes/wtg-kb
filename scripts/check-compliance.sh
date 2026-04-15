@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # WTG Knowledge Base Compliance Bot
 # Checks for broken links and required file structure
 

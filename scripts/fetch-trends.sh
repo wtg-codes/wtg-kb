@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # WTG Knowledge Base - Sync Script
 # This script keeps your KB updated with the latest trends and external rules.

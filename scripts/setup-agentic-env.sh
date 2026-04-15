@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Setup an Agentic Workspace environment using Distrobox
 
 echo "🚀 Setting up Agentic Workspace..."
