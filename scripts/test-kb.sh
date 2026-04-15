@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Comprehensive Test Suite for WTG Knowledge Base
 
 echo "🧪 Starting KB Test Suite..."

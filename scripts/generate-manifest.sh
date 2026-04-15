@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Automatically update llms.txt and project metadata
 
 ./scripts/sync-project-meta.sh

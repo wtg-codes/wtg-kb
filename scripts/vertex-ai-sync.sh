@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Sync Knowledge Base to GCS for Vertex AI Search Ingestion
 
 BUCKET_NAME=$1

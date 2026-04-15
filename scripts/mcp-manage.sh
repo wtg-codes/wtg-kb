@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Helper to list and manage MCP servers in the KB
 
 echo "🛠️ MCP Server Manager"
