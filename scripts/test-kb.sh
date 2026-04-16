@@ -4,6 +4,7 @@ set -euo pipefail
 
 echo "🧪 Starting KB Test Suite..."
 ./scripts/sync-project-meta.sh
+./scripts/generate-manifest.sh
 
 ERROR_COUNT=0
 
@@ -25,11 +26,18 @@ assert_file_exists "docusaurus.config.js"
 # 2. Syntax Validation
 bash -n scripts/generate-manifest.sh && echo "✅ scripts ok" || ERROR_COUNT=$((ERROR_COUNT + 1))
 
-# 3. Docusaurus Build Verification
+# 3. Compliance Bot
+if ./scripts/check-compliance.sh; then
+    echo "✅ Compliance check passed"
+else
+    echo "❌ Compliance check failed"
+    ERROR_COUNT=$((ERROR_COUNT + 1))
+fi
+
+# 4. Docusaurus Build Verification
 echo "🏗️ Verifying Docusaurus build..."
 export WEBPACK_BAR_DISABLE=true
-npm run build > /dev/null 2>&1
-if [ $? -eq 0 ]; then
+if npm run build > /dev/null 2>&1; then
     echo "✅ Docusaurus build successful"
 else
     echo "❌ Docusaurus build failed"

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 # WTG Knowledge Base Compliance Bot
-# Checks for broken links and required file structure
+# Checks for broken links, required file structure, linting, and staleness
 
 echo "🔍 Running Compliance Check..."
 
@@ -18,34 +18,54 @@ done
 
 # 2. Check for empty index files in docs
 for index in docs/*/index.md; do
-    if [ ! -s "$index" ]; then
+    if [ -f "$index" ] && [ ! -s "$index" ]; then
         echo "⚠️ Warning: Empty index file found: $index"
     fi
 done
 
 # 3. Basic Link Integrity (Local)
-# This is a naive check for local markdown links
 grep -r "\[.*\](.*\.md)" docs/ | while read -r line; do
+    file_path=$(echo "$line" | cut -d: -f1)
     link=$(echo "$line" | sed -E 's/.*\[.*\]\((.*\.md)\).*/\1/')
+
+    # Skip remote links
+    if [[ "$link" == http* ]]; then
+        continue
+    fi
+
     if [[ "$link" == /* ]]; then
         # Absolute from root (Docusaurus style)
         target=".${link}"
     else
         # Relative
-        target="$(dirname "$(echo "$line" | cut -d: -f1)")/$link"
+        target="$(dirname "$file_path")/$link"
     fi
 
-    # Skip remote links
-    if [[ "$link" != http* ]]; then
-        if [ ! -f "$target" ] && [ ! -f "${target/index.md/index.md}" ]; then
-            echo "❌ Broken link in $(echo "$line" | cut -d: -f1): $link (Target $target not found)"
-            # ERROR_COUNT=$((ERROR_COUNT + 1)) # Don't fail yet, just warn
+    if [ ! -f "$target" ]; then
+        # Check if it's pointing to a directory that should have an index.md
+        if [ -d "${target%.md}" ] && [ -f "${target%.md}/index.md" ]; then
+             continue
         fi
+        echo "❌ Broken link in $file_path: $link (Target $target not found)"
+        ERROR_COUNT=$((ERROR_COUNT + 1))
     fi
 done
 
+# 4. Markdown Linting
+echo "📝 Running Markdown Lint..."
+if npx markdownlint-cli2 "docs/**/*.md" "README.md" > /dev/null 2>&1; then
+    echo "✅ Markdown lint passed."
+else
+    echo "⚠️ Markdown lint has warnings (see npx markdownlint-cli2 for details)."
+    # ERROR_COUNT=$((ERROR_COUNT + 1)) # Optional: uncomment to fail build on lint errors
+fi
+
+# 5. Stale Content Detection
+./scripts/detect-stale-content.sh
+
 if [ $ERROR_COUNT -eq 0 ]; then
-    echo "✅ Compliance check passed."
+    echo "✅ Compliance check finished."
 else
     echo "❌ Compliance check failed with $ERROR_COUNT errors."
+    false
 fi

@@ -41,6 +41,12 @@ jobs:
       - name: Run Compliance Bot
         run: ./scripts/check-compliance.sh
 
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress './**/*.md'
+          fail: true
+
       - name: Verify README/Config Sync
         run: |
           CONFIG_URL=$(grep "url:" docusaurus.config.js | sed -E "s/.*'(.*)'.*/\1/")

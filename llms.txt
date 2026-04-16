@@ -2,6 +2,12 @@
 ## Navigation
 - [Agents](/docs/agents)
 - [Architecture](/docs/architecture)
+- [Business](/docs/business)
 - [Cloud](/docs/cloud)
+- [Demos](/docs/demos)
+- [Devops](/docs/devops)
+- [Product](/docs/product)
 - [Security](/docs/security)
+- [Skills](/docs/skills)
+- [Testing](/docs/testing)
 - [Workspace](/docs/workspace)
