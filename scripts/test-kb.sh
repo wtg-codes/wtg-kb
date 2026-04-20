@@ -28,8 +28,7 @@ bash -n scripts/generate-manifest.sh && echo "✅ scripts ok" || ERROR_COUNT=$((
 # 3. Docusaurus Build Verification
 echo "🏗️ Verifying Docusaurus build..."
 export WEBPACK_BAR_DISABLE=true
-npm run build > /dev/null 2>&1
-if [ $? -eq 0 ]; then
+if npm run build > /dev/null 2>&1; then
     echo "✅ Docusaurus build successful"
 else
     echo "❌ Docusaurus build failed"
